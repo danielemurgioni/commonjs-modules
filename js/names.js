@@ -5,3 +5,5 @@ function names(firstName, lastName){
         lastName
     } 
 }
+
+module.exports = names;
