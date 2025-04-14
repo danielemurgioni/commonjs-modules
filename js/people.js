@@ -1,12 +1,14 @@
 const names = require("./names.js");
 const hobbies = require("./hobbies.js");
 
-const myHobbies = ["videogiochi", "musica", "pixel art"];
-const myName = "Daniele";
-const mySurname = "Murgioni";
+function person(){ 
+    return {
+        fullname: names("Daniele", "Murgioni"),
+        hobbies: hobbies("videogiochi", "musica", "pixel art")
+    }
+}
 
-const FullName = names(myName, mySurname);
-const funzHobbies = hobbies(myHobbies[0],myHobbies[1],myHobbies[2]);
+console.log(person());
 
-console.log(`${FullName.firstName} ${FullName.lastName}`);
-console.log(funzHobbies);
+console.log(person().fullname);
+console.log(person().hobbies);
