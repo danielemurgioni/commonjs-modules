@@ -6,5 +6,7 @@ function names(firstName, lastName){
     } 
 }
 
+console.log(names)
+
 //esporto la funzione
 module.exports = names;
