@@ -6,4 +6,5 @@ function names(firstName, lastName){
     } 
 }
 
+//esporto la funzione
 module.exports = names;
